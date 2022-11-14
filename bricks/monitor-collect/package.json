@@ -1,6 +1,6 @@
 {
   "name": "weili-monitor-collect",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "yeweili <782312713@qq.com>",
   "homepage": "",
@@ -21,7 +21,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "moment": "^2.29.4",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
   }
 }
