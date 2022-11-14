@@ -1,6 +1,6 @@
 {
   "name": "weili-monitor-alert",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "yeweili <782312713@qq.com>",
   "homepage": "",
@@ -22,5 +22,6 @@
   },
   "devDependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "gitHead": "ce456bb0ae59f7b90c21653b9670dc9df078f1fb"
 }
