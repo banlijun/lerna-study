@@ -1,5 +1,5 @@
 {
-  "name": "lerna-study",
+  "name": "weili-lerna-study",
   "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
