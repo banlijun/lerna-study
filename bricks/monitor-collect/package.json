@@ -1,0 +1,27 @@
+{
+  "name": "monitor-collect",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "yeweili <782312713@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/monitor-collect.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/yeweili/resource-code-collection.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21"
+  }
+}

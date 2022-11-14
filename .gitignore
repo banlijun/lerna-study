@@ -1,0 +1,4 @@
+/node_modules
+/bricks/*/lib
+/bricks/*/dist
+/bricks/*/node_modules
