@@ -2,5 +2,18 @@
   "packages": [
     "bricks/*"
   ],
-  "version": "0.0.7"
+  "version": "independent",
+  "npmClient": "yarn",
+  "stream": true,
+  "useWorkspaces": true,
+  "conventionalCommits": true,
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "allowBranch": ["master", "legacy/**"],
+      "verifyAccess": false,
+      "message": "chore(release): publish",
+      "registry": "https://registry.npm.easyops.local"
+    }
+  }
 }
