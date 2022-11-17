@@ -3,9 +3,10 @@
 
 name: NPM-PUBLISH
 
-on:
-  release:
-    types: [created]
+on: 
+  push:
+    branches:
+     - master
 
 jobs:
   build:
@@ -15,8 +16,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: ./build.sh
 
   publish-npm:
     needs: build
@@ -27,7 +26,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
