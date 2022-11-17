@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.0.8](/compare/weili-monitor-alert@0.0.8...weili-monitor-alert@0.0.8) (2022-11-17)
+
+**Note:** Version bump only for package weili-monitor-alert
+
+
+
+
+
 ## 0.0.8 (2022-11-17)
 
 
