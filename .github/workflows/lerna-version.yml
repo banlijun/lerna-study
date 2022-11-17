@@ -26,10 +26,12 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-          
-      - run: cd ./bricks/monitor-collect && npm publish
+      - run: lerna publish from-packages
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
-      - run: cd ./bricks/monitor-alert && npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
+      #- run: cd ./bricks/monitor-collect && npm publish
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
+      #- run: cd ./bricks/monitor-alert && npm publish
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
