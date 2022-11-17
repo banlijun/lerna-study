@@ -21,7 +21,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.20",
     "moment": "^2.29.4"
   },
   "gitHead": "b88fce96414003b369a4a12b0a54d40cbd1cecb8"

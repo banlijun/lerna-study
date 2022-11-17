@@ -1,0 +1,38 @@
+Arguments: 
+  /Users/weiliye/.nvm/versions/node/v16.13.2/bin/node /Users/weiliye/.nvm/versions/node/v16.13.2/bin/yarn install --mutex network:42424 --non-interactive
+
+PATH: 
+  /Users/weiliye/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/weiliye/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.npmjs.org/lerna: ETIMEDOUT
+      at Timeout._onTimeout (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:141543:19)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "weili-lerna-study",
+    "private": true,
+    "devDependencies": {
+      "lerna": "^4.0.0"
+    },
+    "workspaces": [
+      "bricks/*"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
