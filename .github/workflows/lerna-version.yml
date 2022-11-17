@@ -30,3 +30,6 @@ jobs:
       - run: cd ./bricks/monitor-collect && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
+      - run: cd ./bricks/monitor-monitor && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
