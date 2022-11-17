@@ -27,6 +27,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: npm publish
+      - run: lerna publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTO_PUSH}}
