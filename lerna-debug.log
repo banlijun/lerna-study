@@ -6,11 +6,11 @@
 0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath /Users/weiliye/Desktop/resource-code-collection/lerna
-3 verbose session 94e623fab70271b2
+3 verbose session 129ef5db261a3fb1
 4 verbose user-agent lerna/4.0.0/node@v16.13.2+arm64 (darwin)
 5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
 6 verbose rootPath /Users/weiliye/Desktop/resource-code-collection/lerna
-7 info current version 0.0.4
+7 info current version 0.0.5
 8 silly isAnythingCommitted
 9 verbose isAnythingCommitted 1
 10 silly getCurrentBranch
@@ -20,95 +20,110 @@
 14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 15 silly hasTags
 16 verbose hasTags true
-17 silly git-describe.sync "v0.0.4-6-g7f378fa" => {"lastTagName":"v0.0.4","lastVersion":"v0.0.4","refCount":"6","sha":"7f378fa","isDirty":false}
-18 info Looking for changed packages since v0.0.4
+17 silly git-describe.sync "v0.0.5-3-gc6cb2e8" => {"lastTagName":"v0.0.5","lastVersion":"v0.0.5","refCount":"3","sha":"c6cb2e8","isDirty":false}
+18 info Looking for changed packages since v0.0.5
 19 silly checking diff bricks/monitor-alert
 20 silly found diff in bricks/monitor-alert/package.json
 21 verbose filtered diff [ 'bricks/monitor-alert/package.json' ]
 22 silly checking diff bricks/monitor-collect
-23 silly no diff found in weili-monitor-collect
-24 verbose updated weili-monitor-alert
-25 verbose git-describe undefined => "v0.0.4-6-g7f378fa"
-26 silly git-describe parsed => {"lastTagName":"v0.0.4","lastVersion":"v0.0.4","refCount":"6","sha":"7f378fa","isDirty":false}
-27 info execute Skipping releases
-28 silly lifecycle No script for "preversion" in "weili-lerna-study", continuing
-29 silly lifecycle No script for "preversion" in "weili-monitor-alert", continuing
-30 silly lifecycle No script for "version" in "weili-monitor-alert", continuing
-31 silly lifecycle No script for "version" in "weili-lerna-study", continuing
-32 silly gitAdd [
-32 silly gitAdd   'bricks/monitor-alert/package.json',
-32 silly gitAdd   'bricks/monitor-alert/package-lock.json',
-32 silly gitAdd   'lerna.json'
-32 silly gitAdd ]
-33 silly gitCommit v0.0.5
-34 verbose git [ 'commit', '-m', 'v0.0.5' ]
-35 silly gitTag v0.0.5
-36 verbose git [ 'tag', 'v0.0.5', '-m', 'v0.0.5' ]
-37 silly lifecycle No script for "postversion" in "weili-monitor-alert", continuing
-38 silly lifecycle No script for "postversion" in "weili-lerna-study", continuing
-39 info git Pushing tags...
-40 silly gitPush origin master
-41 info publish Publishing packages to npm...
-42 info Verifying npm credentials
-43 verbose Retrieving npm user profile
-44 warn registry Unexpected warning for https://registry.npmjs.org/: Miscellaneous Warning ETIMEDOUT: request to https://registry.npmjs.org/-/npm/v1/user failed, reason: connect ETIMEDOUT 104.16.18.35:443
-45 warn registry Using stale data from https://registry.npmjs.org/ due to a request error during revalidation.
-46 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 75088ms (from cache)
-47 silly npm profile get received {"tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
-48 silly get npm username received {"username":"yeweili","tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
-49 silly verifyNpmPackageAccess
-50 http fetch GET 200 https://registry.npmjs.org/-/org/yeweili/package?format=cli 75019ms (cache stale)
-51 info Checking two-factor auth mode
-52 verbose Retrieving npm user profile
-53 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 75010ms (from cache)
-54 silly npm profile get received {"tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
-55 silly 2FA false
-56 warn ENOLICENSE Package weili-monitor-alert is missing a license.
-56 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
-56 warn ENOLICENSE See https://choosealicense.com for additional guidance.
-57 silly getCurrentSHA
-58 verbose getCurrentSHA ada5c483fda54a2e2200d31f93f963be43513ccf
-59 silly lifecycle No script for "prepublish" in "weili-lerna-study", continuing
-60 silly lifecycle No script for "prepare" in "weili-lerna-study", continuing
-61 silly lifecycle No script for "prepublishOnly" in "weili-lerna-study", continuing
-62 silly lifecycle No script for "prepack" in "weili-lerna-study", continuing
-63 verbose pack-directory bricks/monitor-alert
-64 silly lifecycle No script for "prepublish" in "weili-monitor-alert", continuing
-65 silly lifecycle No script for "prepare" in "weili-monitor-alert", continuing
-66 silly lifecycle No script for "prepublishOnly" in "weili-monitor-alert", continuing
-67 silly lifecycle No script for "prepack" in "weili-monitor-alert", continuing
-68 silly lifecycle No script for "postpack" in "weili-monitor-alert", continuing
-69 verbose packed bricks/monitor-alert
-70 silly lifecycle No script for "postpack" in "weili-lerna-study", continuing
-71 verbose publish weili-monitor-alert
-72 silly FetchError: request to https://registry.npmjs.org/weili-monitor-alert failed, reason: connect ETIMEDOUT 104.16.18.35:443
-72 silly     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
-72 silly     at ClientRequest.emit (node:events:390:28)
-72 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-72 silly     at TLSSocket.emit (node:events:402:35)
-72 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-72 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-72 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
-72 silly  FetchError: request to https://registry.npmjs.org/weili-monitor-alert failed, reason: connect ETIMEDOUT 104.16.18.35:443
-72 silly     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
-72 silly     at ClientRequest.emit (node:events:390:28)
-72 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-72 silly     at TLSSocket.emit (node:events:402:35)
-72 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-72 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-72 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-72 silly   code: 'ETIMEDOUT',
-72 silly   errno: 'ETIMEDOUT',
-72 silly   syscall: 'connect',
-72 silly   address: '104.16.18.35',
-72 silly   port: 443,
-72 silly   type: 'system'
-72 silly }
-73 error ETIMEDOUT request to https://registry.npmjs.org/weili-monitor-alert failed, reason: connect ETIMEDOUT 104.16.18.35:443
-74 error FetchError: request to https://registry.npmjs.org/weili-monitor-alert failed, reason: connect ETIMEDOUT 104.16.18.35:443
-74 error     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
-74 error     at ClientRequest.emit (node:events:390:28)
-74 error     at TLSSocket.socketErrorListener (node:_http_client:447:9)
-74 error     at TLSSocket.emit (node:events:402:35)
-74 error     at emitErrorNT (node:internal/streams/destroy:157:8)
-74 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+23 silly found diff in bricks/monitor-collect/package.json
+24 verbose filtered diff [ 'bricks/monitor-collect/package.json' ]
+25 verbose updated weili-monitor-alert
+26 verbose updated weili-monitor-collect
+27 verbose git-describe undefined => "v0.0.5-3-gc6cb2e8"
+28 silly git-describe parsed => {"lastTagName":"v0.0.5","lastVersion":"v0.0.5","refCount":"3","sha":"c6cb2e8","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "weili-lerna-study", continuing
+31 silly lifecycle No script for "preversion" in "weili-monitor-alert", continuing
+32 silly lifecycle No script for "preversion" in "weili-monitor-collect", continuing
+33 silly lifecycle No script for "version" in "weili-monitor-collect", continuing
+34 silly lifecycle No script for "version" in "weili-monitor-alert", continuing
+35 silly lifecycle No script for "version" in "weili-lerna-study", continuing
+36 silly gitAdd [
+36 silly gitAdd   'bricks/monitor-collect/package.json',
+36 silly gitAdd   'bricks/monitor-collect/package-lock.json',
+36 silly gitAdd   'bricks/monitor-alert/package.json',
+36 silly gitAdd   'bricks/monitor-alert/package-lock.json',
+36 silly gitAdd   'lerna.json'
+36 silly gitAdd ]
+37 silly gitCommit v0.0.6
+38 verbose git [ 'commit', '-m', 'v0.0.6' ]
+39 silly gitTag v0.0.6
+40 verbose git [ 'tag', 'v0.0.6', '-m', 'v0.0.6' ]
+41 silly lifecycle No script for "postversion" in "weili-monitor-alert", continuing
+42 silly lifecycle No script for "postversion" in "weili-monitor-collect", continuing
+43 silly lifecycle No script for "postversion" in "weili-lerna-study", continuing
+44 info git Pushing tags...
+45 silly gitPush origin master
+46 info publish Publishing packages to npm...
+47 info Verifying npm credentials
+48 verbose Retrieving npm user profile
+49 warn registry Unexpected warning for https://registry.npmjs.org/: Miscellaneous Warning ETIMEDOUT: request to https://registry.npmjs.org/-/npm/v1/user failed, reason: connect ETIMEDOUT 104.16.22.35:443
+50 warn registry Using stale data from https://registry.npmjs.org/ due to a request error during revalidation.
+51 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 75070ms (from cache)
+52 silly npm profile get received {"tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
+53 silly get npm username received {"username":"yeweili","tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
+54 silly verifyNpmPackageAccess
+55 http fetch GET 200 https://registry.npmjs.org/-/org/yeweili/package?format=cli 75084ms (cache stale)
+56 info Checking two-factor auth mode
+57 verbose Retrieving npm user profile
+58 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 75017ms (from cache)
+59 silly npm profile get received {"tfa":false,"name":"yeweili","email":"782312713@qq.com","email_verified":true,"created":"2021-09-06T06:30:25.054Z","updated":"2022-11-14T07:57:49.129Z","cidr_whitelist":null}
+60 silly 2FA false
+61 warn ENOLICENSE Packages weili-monitor-alert and weili-monitor-collect are missing a license.
+61 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+61 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+62 silly getCurrentSHA
+63 verbose getCurrentSHA b88fce96414003b369a4a12b0a54d40cbd1cecb8
+64 silly lifecycle No script for "prepublish" in "weili-lerna-study", continuing
+65 silly lifecycle No script for "prepare" in "weili-lerna-study", continuing
+66 silly lifecycle No script for "prepublishOnly" in "weili-lerna-study", continuing
+67 silly lifecycle No script for "prepack" in "weili-lerna-study", continuing
+68 verbose pack-directory bricks/monitor-alert
+69 verbose pack-directory bricks/monitor-collect
+70 silly lifecycle No script for "prepublish" in "weili-monitor-alert", continuing
+71 silly lifecycle No script for "prepublish" in "weili-monitor-collect", continuing
+72 silly lifecycle No script for "prepare" in "weili-monitor-alert", continuing
+73 silly lifecycle No script for "prepare" in "weili-monitor-collect", continuing
+74 silly lifecycle No script for "prepublishOnly" in "weili-monitor-alert", continuing
+75 silly lifecycle No script for "prepublishOnly" in "weili-monitor-collect", continuing
+76 silly lifecycle No script for "prepack" in "weili-monitor-alert", continuing
+77 silly lifecycle No script for "prepack" in "weili-monitor-collect", continuing
+78 silly lifecycle No script for "postpack" in "weili-monitor-alert", continuing
+79 verbose packed bricks/monitor-alert
+80 silly lifecycle No script for "postpack" in "weili-monitor-collect", continuing
+81 verbose packed bricks/monitor-collect
+82 silly lifecycle No script for "postpack" in "weili-lerna-study", continuing
+83 verbose publish weili-monitor-alert
+84 verbose publish weili-monitor-collect
+85 silly FetchError: request to https://registry.npmjs.org/weili-monitor-collect failed, reason: connect ETIMEDOUT 104.16.22.35:443
+85 silly     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+85 silly     at ClientRequest.emit (node:events:390:28)
+85 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
+85 silly     at TLSSocket.emit (node:events:402:35)
+85 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+85 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+85 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+85 silly  FetchError: request to https://registry.npmjs.org/weili-monitor-collect failed, reason: connect ETIMEDOUT 104.16.22.35:443
+85 silly     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+85 silly     at ClientRequest.emit (node:events:390:28)
+85 silly     at TLSSocket.socketErrorListener (node:_http_client:447:9)
+85 silly     at TLSSocket.emit (node:events:402:35)
+85 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+85 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+85 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+85 silly   code: 'ETIMEDOUT',
+85 silly   errno: 'ETIMEDOUT',
+85 silly   syscall: 'connect',
+85 silly   address: '104.16.22.35',
+85 silly   port: 443,
+85 silly   type: 'system'
+85 silly }
+86 error ETIMEDOUT request to https://registry.npmjs.org/weili-monitor-collect failed, reason: connect ETIMEDOUT 104.16.22.35:443
+87 error FetchError: request to https://registry.npmjs.org/weili-monitor-collect failed, reason: connect ETIMEDOUT 104.16.22.35:443
+87 error     at ClientRequest.<anonymous> (/Users/weiliye/.nvm/versions/node/v16.13.2/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+87 error     at ClientRequest.emit (node:events:390:28)
+87 error     at TLSSocket.socketErrorListener (node:_http_client:447:9)
+87 error     at TLSSocket.emit (node:events:402:35)
+87 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+87 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
