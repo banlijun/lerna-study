@@ -13,7 +13,7 @@
       "allowBranch": ["master", "legacy/**"],
       "verifyAccess": false,
       "message": "chore(release): publish",
-      "registry": "https://registry.npmjs.org"
+      "registry": "https://registry.npmjs1.org"
     }
   }
 }
